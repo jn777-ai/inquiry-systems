@@ -74,4 +74,27 @@ http://localhost:8080/inquiry
   
 <table> <tr> <td width="45%"> <img src="https://github.com/user-attachments/assets/be8cf16b-86da-4687-ad6a-3e256d84f1d0" width="100%" /> </td> <td width="55%"> <ul> <li>問い合わせを一覧で確認</li> <li>ジャンルでフィルタリング可能</li> <li>新しい順に表示</li> </ul> </td> </tr> </table>
 
+## 🛠️ 主な使用技術（Tech Stack）
+ 🔧 フロントエンド
+<p align="left"> <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/JSP-007396?logo=java&logoColor=white" /> </p>
+ ⚙️ バックエンド
+<p align="left"> <img src="https://img.shields.io/badge/Java-17-007396?logo=openjdk&logoColor=white" /> <img src="https://img.shields.io/badge/Jakarta%20Servlet-orange?logo=jakartaee&logoColor=white" /> <img src="https://img.shields.io/badge/Tomcat-9-F8DC75?logo=apachetomcat&logoColor=black" /> </p>
+ 🗄️ データベース
+<p align="left"> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" /> </p>
+ 📦 ビルド / 管理
+<p align="left"> <img src="https://img.shields.io/badge/Maven-C71A36?logo=apachemaven&logoColor=white" /> </p>
 
+## 📘 ER Diagram（ER 図）
+<img width="317" height="376" alt="Untitled" src="https://github.com/user-attachments/assets/222d8fbd-3c9f-43cd-9253-b7aac7a6942e" />
+
+このアプリでは、問い合わせデータを管理するために
+シンプルな 1 テーブル構成（inquiries） を採用しています。
+
+ユーザーは「問い合わせ」データのみを登録
+
+管理者は同じテーブルから履歴・状態を参照
+
+ジャンル・ステータス・登録日時などの項目で柔軟に管理可能
+
+複雑なユーザー認証や他テーブルとのリレーションを持たず、
+最小限の構造で 問い合わせの登録・管理に特化した設計 になっています。

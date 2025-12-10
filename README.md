@@ -8,15 +8,31 @@
 🌐 Service URL（サービス URL）
 
 ## 🚧 現在はローカル環境のみで動作しています。
-アプリは Servlet（Tomcat）ベースのため、ローカルでサーバ起動後に以下へアクセスできます：
+### ☕ ローカルでの起動方法（Tomcat で動作）
 
-http://localhost:8080/inquiry
+このアプリは Servlet（Tomcat）ベース で動作します。
+以下の手順でローカル環境から起動できます。
 
-☕ Tomcat（ローカル）で起動する手順
-### ① WAR をビルド
+### 📌 前提環境
+
+Java 17
+
+Apache Tomcat 9.x
+
+Maven 3.x
+
+### ① WAR ファイルをビルド
 mvn clean package
 
-### ② WAR を Tomcat の webapps フォルダへ配置
+
+target/ フォルダに inquiry.war が生成されます。
+
+### ② Tomcat の webapps に配置
+/apache-tomcat-9.x/webapps/
+
+
+へ WAR をコピーすると、自動的に展開されます。
+
 ### ③ Tomcat を起動
 
 Windows↓
@@ -24,11 +40,11 @@ Windows↓
 catalina.bat run
 
 
-Mac / Linuxz↓
+Mac / Linux↓
 
 catalina.sh run
 
-④ ブラウザでアクセス
+### ④ ブラウザからアクセス
 http://localhost:8080/inquiry
 
 ## 💡 アプリを作ったキッカケ
